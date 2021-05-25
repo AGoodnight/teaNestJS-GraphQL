@@ -1,0 +1,28 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type TeaType {
+  id: Int!
+  name: String!
+  category: String
+  origin: String
+  description: String
+}
+
+type Query {
+  teas: [TeaType!]!
+}
+
+type Mutation {
+  createTea(input: TeaInput!): TeaType!
+  updateTea(input: TeaInput!, id: Float!): TeaType!
+  deleteTea(id: Float!): TeaType!
+}
+
+input TeaInput {
+  name: String!
+  category: String
+  origin: String
+  description: String
+}
